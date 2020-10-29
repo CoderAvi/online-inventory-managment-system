@@ -1,0 +1,2 @@
+# online-inventory-managment-system
+This is a simple inventory system created in python language using Tkinter. this is a simple gui based project where  database is used for storing information. in this system you can add , delete , update the product in your inventory using product id and also add to cart , bill generation , total product with total price , change calculation like features you can use.
