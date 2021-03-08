@@ -4,6 +4,7 @@ In this folder i have created two files for each and one for database. in main f
 												main.py.inynb or main.py will show the main inventory system interface where you can search product by using product id and you can add to cart the product , make discount , calculate total , calculate changes , generate bill.
 	in add-to-database file after running you will get an interface where you can add any new product to the inventory.
 	   											in update file after running you will get an interface where you can 
-
+make changes in existing product in your inventory by searching their product id. i have added product id from 1 to 11 in database. if you want to search kindly 
+click from 1 to 11 any number in between.
 
 												~Avinash- 11906852
