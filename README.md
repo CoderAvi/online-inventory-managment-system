@@ -7,8 +7,8 @@ In this folder i have created two files for each and one for database. in main f
 make changes in existing product in your inventory by searching their product id. i have added product id from 1 to 11 in database. if you want to search kindly 
 click from 1 to 11 any number in between.
 
-											                                                                                                                	               											~Avinash- 11906852
-
+														~Avinash- 11906852
+					                                                                                                           
 
 
 
