@@ -93,45 +93,7 @@ class Database:
          self.tbBox.place(x=750,y=70)
          self.tbBox.insert(END,"Product Id has reached up to:"+str(id))
 
-    def search(self, *args, **kwargs):
-         sql = "SELECT * FROM inventory WHERE id=?"
-         result = c.execute(sql, (self.id_leb.get(),))
-         for r in result:
-              self.n1 = r[1]  # name
-              self.n2 = r[2]  # stock
-              self.n3 = r[3]  # cost price
-              self.n4 = r[4]  # selling price
-              self.n5 = r[5]  # total cost price
-              self.n6 = r[6]  # total selling price
-              self.n7 = r[7]  # assumed_profit
-              self.n8 = r[8]  # vendor
-              self.n9 = r[9]  # vendor_phone
-         conn.commit()
-
-          #inster into the enteries to update
-         self.name_e.delete(0,END)
-         self.name_e.insert(0, str(self.n1))
-
-         self.stock_e.delete(0, END)
-         self.stock_e.insert(0, str(self.n2))
-
-         self.cp_e.delete(0, END)
-         self.cp_e.insert(0, str(self.n3))
-
-         self.sp_e.delete(0, END)
-         self.sp_e.insert(0, str(self.n4))
-
-         self.vendor_e.delete(0, END)
-         self.vendor_e.insert(0, str(self.n8))
-
-         self.vendor_phone_e.delete(0, END)
-         self.vendor_phone_e.insert(0, str(self.n9))
-
-         self.totalcp_e.delete(0, END)
-         self.totalcp_e.insert(0, str(self.n5))
-
-         self.totalsp_e.delete(0, END)
-         self.totalsp_e.insert(0, str(self.n6))
+   
 
     def update(self,*args,**kwargs):
           self.u1=self.name_e.get()
