@@ -1,4 +1,19 @@
+#!/usr/bin/env python
+# coding: utf-8
 
+# In[1]:
+
+
+#import all the modules
+from tkinter import *
+import sqlite3
+import tkinter.messagebox
+
+conn=sqlite3.connect("storedb.db")
+c=conn.cursor()
+result=c.execute("SELECT Max(id) from inventory")
+for r in result:
+    id=r[0]
 
 class Database:
     def __init__(self,master,*args,**kwargs):
